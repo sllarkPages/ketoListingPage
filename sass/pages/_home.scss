@@ -83,15 +83,22 @@ main{
 
     li{
       border-top: 1px solid #d0d0d0;
-      padding: 1.5rem 0;
+      padding: 1rem 0;
       padding-left: 5rem;
       font-size: 1.6rem;
-      cursor: pointer;
       position: relative;
 
       &:last-of-type{
         border-bottom: 1px solid #d0d0d0;
+      }
 
+      a{
+        padding: 0.4rem;
+        display: inline-block;
+        &:hover{
+          cursor: pointer;
+          text-decoration: underline;
+        }
       }
     }
     li.activeLiCat:after{
@@ -206,7 +213,7 @@ main{
 
     p{
       line-height: 1.9;
-      max-width: 83rem;
+      max-width: 110rem;
     }
   }
 }
@@ -579,14 +586,12 @@ main>.container{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
+p{
+  a{
+    color: $color-primary;
+    display: inline-block;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
